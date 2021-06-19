@@ -1,0 +1,13 @@
+{
+	"name": "Rest_FINRA_Anonymous",
+	"properties": {
+		"description": "Rest Access to FINRA API using anonymous access. This is allowed for market transparency datasets.\n\nhttps://developer.finra.org/authorization\n\n\nSync limit is 5,000/request\nhttps://developer.finra.org/platform-usage-limits",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://api.finra.org",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
