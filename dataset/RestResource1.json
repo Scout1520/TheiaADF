@@ -1,0 +1,24 @@
+{
+	"name": "RestResource1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Rest_FINRA_Anonymous",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"endpoint": {
+				"type": "string",
+				"defaultValue": "/data/group/OTCMarket/name/regShoDailyMock"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().endpoint",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
